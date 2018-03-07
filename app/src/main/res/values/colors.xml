@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dividerGray">#EDEDED</color>
+    <color name="dividerLightGray">#AAACB4</color>
+
+    <color name="nav_checked">#3F51B5</color>
+    <color name="nav_unchecked">#757575</color>
+
+    <color name="textDark">#222222</color>
+    <color name="textGray">#545454</color>
+    <color name="textLightGray">#AAACB4</color>
+    <color name="textBlue">#0076ff</color>
+    <color name="textDarkYellow">#736444</color>
+
+    <color name="backgroundGray">#F7F7F7</color>
+    <color name="shareCardBackground">#f9f8f5</color>
+</resources>

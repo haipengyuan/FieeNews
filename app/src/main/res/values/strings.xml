@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Read</string>
+
+    <string name="hot_topic">热门话题</string>
+    <string name="news">科技动态</string>
+    <string name="developer_news">开发者资讯</string>
+    <string name="more">更多</string>
+
+    <string name="no_more_to_load">已经到底啦~</string>
+
+    <string name="instant_read">即时查看</string>
+
+    <string name="site_author_time_format">%1$s/%2$s·%3$s</string>
+    <string name="author_time_format">%1$s·%2$s</string>
+    <string name="events">相关事件</string>
+
+    <string name="save_topic_share_view">生成分享图片并保存</string>
+    <string name="domain">Readhub.me</string>
+    <string name="finish_reminder">再按一次返回键退出</string>
+    <string name="go_origin_site"><![CDATA[访问原网址 >]]></string>
+    <string name="source_fromat">来源：%1$s</string>
+    <string name="readhub_slogan">科技新闻聚合阅读</string>
+</resources>
