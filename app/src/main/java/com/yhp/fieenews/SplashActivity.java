@@ -7,6 +7,9 @@ import android.os.Bundle;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 应用程序启动页面
+ */
 public class SplashActivity extends Activity {
 
     @Override
@@ -14,8 +17,10 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        // 两秒后进入主界面
         new Thread(new Runnable() {
-            @Override public void run() {
+            @Override
+            public void run() {
                 try {
                     TimeUnit.MILLISECONDS.sleep(2000);
                 } catch (InterruptedException e) {

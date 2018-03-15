@@ -51,6 +51,7 @@ public class HotTopicViewHolder extends BaseViewHolder<Topic> {
     public void bindTo(final Topic value) {
         mTopic = value;
 
+        // 设置文本样式
         SpannableString spannableString =
                 new SpannableString(value.getTitle() + "  " + value.getPublishDateCountDown());
         spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#AAACB4")),

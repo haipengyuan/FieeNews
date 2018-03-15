@@ -36,6 +36,10 @@ public abstract class BaseListFragment<T> extends SupportFragment implements INe
 
     boolean hasMore = true;
 
+    /**
+     * 第三方库
+     * 用来显示网络请求失败等错误信息或加载动画等
+     */
     public DynamicBox mBox;
 
     @BindView(R.id.fab)
@@ -51,6 +55,7 @@ public abstract class BaseListFragment<T> extends SupportFragment implements INe
         @Override
         public BaseViewHolder<T> onCreateViewHolder(ViewGroup parent, int viewType) {
             if (viewType == VIEW_TYPE_LAST_ITEM) {
+                // 上划加载
                 return new LoadingViewHolder(parent, hasMore);
             }
             return provideViewHolder(parent, viewType);
@@ -71,6 +76,12 @@ public abstract class BaseListFragment<T> extends SupportFragment implements INe
         }
     };
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mActivity = (SupportActivity) context;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
@@ -82,12 +93,6 @@ public abstract class BaseListFragment<T> extends SupportFragment implements INe
             requestData();
         }
         return view;
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        mActivity = (SupportActivity) context;
     }
 
     private void initContent() {
